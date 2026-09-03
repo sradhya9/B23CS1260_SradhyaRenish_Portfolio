@@ -731,15 +731,31 @@ footer {
     }
     
     .hero-content {
+        flex-direction: column;
         text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-image {
+        justify-content: center;
     }
 
     .cursive-accent {
-        transform: rotate(-5deg) translateY(10px);
+        transform: rotate(-5deg) translateY(0);
+        margin-bottom: 0;
     }
     
-    .about-image { order: -1; }
-    .education-image { order: -1; }
+    .about-image, .education-image {
+        order: 1; /* Show text first, then image on mobile */
+    }
+    
+    .experience-image {
+        margin-top: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -757,6 +773,7 @@ footer {
         text-align: center;
         transition: 0.3s;
         border-bottom: 2px solid var(--border-color-dark);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
 
     .nav-menu.active {
@@ -772,9 +789,55 @@ footer {
     .hamburger.active .bar:nth-child(2) { opacity: 0; }
     .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    .hero-role {
+        font-size: 1rem;
+    }
+    
+    .cursive-accent {
+        font-size: 3rem;
+    }
+
+    .giant-title {
+        font-size: clamp(3rem, 12vw, 5rem);
+    }
+    
+    .section-title {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
+    .hero-bg-text {
+        font-size: clamp(5rem, 15vw, 15rem);
+    }
 }
 
 @media (max-width: 480px) {
     .section { padding: 4rem 0; }
-    .contact-form { padding: 1.5rem; }
+    
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    
+    .contact-form { 
+        padding: 1.5rem; 
+    }
+    
+    .hero-image img {
+        max-width: 280px;
+        border-width: 6px;
+    }
+    
+    .about-image img, .experience-image img, .education-image img {
+        max-width: 100%;
+        border-width: 6px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
