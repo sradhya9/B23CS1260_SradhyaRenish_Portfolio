@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sradhya Renish | Portfolio</title>
+    <meta name="description" content="Portfolio of Sradhya Renish, an aspiring Software Engineer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@600;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">SR.</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section bg-red texture">
+            <!-- Huge background text -->
+            <div class="hero-bg-text">PORTFOLIO</div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="cursive-accent">Developer</span>
+                    <div class="hero-details">
+                        <span class="hero-name">Sradhya Renish</span>
+                        <span class="hero-role">Creative and efficient software developer with a knack for building
+                            user-focused, scalable solutions across web and backend technologies.</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="Sradhya Renish">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section bg-cream">
+            <div class="container split-layout">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Sradhya Renish - About Me">
+                </div>
+                <div class="about-content">
+                    <span class="cursive-accent dark">Hello</span>
+                    <h2 class="section-title dark">ABOUT ME</h2>
+                    <p class="about-desc">I am an aspiring Software Engineer passionate about building scalable,
+                        innovative, and user-centric software solutions. With a strong foundation in full-stack
+                        development, software engineering, artificial intelligence, IoT, and modern web technologies, I
+                        have gained practical experience through internships, research, leadership roles, and
+                        national-level hackathons.</p>
+                    <p class="about-desc">My technical expertise includes React, Node.js, Express.js, Python, FastAPI,
+                        Firebase, MySQL, RESTful APIs, and modern software development practices. I effectively leverage
+                        AI-assisted development tools to improve productivity, streamline development workflows, enhance
+                        code quality, and solve complex technical challenges efficiently.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section bg-red texture">
+            <div class="container split-layout">
+                <div class="experience-content">
+                    <span class="cursive-accent">My</span>
+                    <h2 class="section-title">EXPERIENCES</h2>
+
+                    <div class="tables-container">
+                        <!-- Internship Table -->
+                        <article class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Organization</th>
+                                        <th>Role</th>
+                                        <th>Duration</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Triassic Solutions</td>
+                                        <td>Software Engineer Intern</td>
+                                        <td>Jun 2025</td>
+                                        <td>Developed the MaxProfit system, a profitability & finance analytics tool.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Indian Institute of Space Science and Technology</td>
+                                        <td>Research Scholar</td>
+                                        <td>Dec 2024 - Jan 2025</td>
+                                        <td>Conducted literature study on Lattice-Based Cryptography.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+                </div>
+                <div class="experience-image">
+                    <img src="images/ex.png" alt="Work Experience">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Skills Section -->
+        <section id="education" class="education section bg-cream">
+            <div class="container split-layout">
+                <div class="education-image">
+                    <img src="./images/ed.png" alt="Education and Graduation">
+                </div>
+                <div class="education-content">
+                    <span class="cursive-accent dark">My</span>
+                    <h2 class="section-title dark">EDUCATION</h2>
+
+                    <article class="timeline table-wrapper">
+                        <table class="data-table borderless">
+                            <thead>
+                                <tr>
+                                    <th>Institution</th>
+                                    <th>Degree / Grade</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mar Baselios College of Engineering</td>
+                                    <td>B.Tech CSE - 9.36 CGPA</td>
+                                    <td>2023 - 2027</td>
+                                </tr>
+                                <tr>
+                                    <td>Rajagiri Christu Jayanthi Public School</td>
+                                    <td>12th CBSE - 93.20%</td>
+                                    <td>2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Rajagiri Christu Jayanthi Public School</td>
+                                    <td>10th CBSE - 97.40%</td>
+                                    <td>2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section bg-cream">
+            <div class="container">
+                <h2 class="section-title dark text-center">CORE EXPERTISE</h2>
+                <dl class="skills-list">
+                    <div class="skill-category">
+                        <dt>Languages</dt>
+                        <dd>Java, Python, C, JavaScript, TypeScript, HTML5, CSS3</dd>
+                    </div>
+                    <div class="skill-category">
+                        <dt>Frontend & Mobile</dt>
+                        <dd>React.js, React Native, UI/UX Design, Responsive Web Design</dd>
+                    </div>
+                    <div class="skill-category">
+                        <dt>Backend & Databases</dt>
+                        <dd>Node.js, FastAPI, REST, Firebase, MySQL, MongoDB</dd>
+                    </div>
+                    <div class="skill-category">
+                        <dt>Tools & Technologies</dt>
+                        <dd>Docker, Machine Learning, Artificial Intelligence, IoT, Cloud Deployment</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Projects Intro Section -->
+        <section id="projects-intro" class="projects-intro section bg-red texture">
+            <div class="container text-center relative">
+                <span class="cursive-accent">Sample</span>
+                <h2 class="giant-title">PROJECTS</h2>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section (Dynamically Rendered) -->
+        <section id="projects" class="projects section bg-cream">
+            <div class="container">
+                <!-- Filter buttons -->
+                <div class="project-filters" id="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                </div>
+
+                <!-- Container populated by JS -->
+                <div class="projects-grid" id="projects-container">
+                    <!-- Cards will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-red texture">
+            <div class="container">
+                <div class="text-center">
+                    <span class="cursive-accent">Let's Connect</span>
+                    <h2 class="giant-title">THANK YOU</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <aside class="contact-info">
+                        <p class="contact-desc">Feel free to reach out for collaborations or just a friendly hello! I'm
+                            always open to discussing new projects, creative ideas or opportunities to be part of your
+                            visions.</p>
+
+                        <ul class="contact-links">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a
+                                    href="mailto:sradhyarenish.b23cs1260@mbcet.ac.in">sradhyarenish.b23cs1260@mbcet.ac.in</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <a href="tel:+919207755908">+91-9207755908</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <a href="https://www.linkedin.com/in/sradhya-renish/" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn Profile</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <a href="https://github.com/sradhya9" target="_blank" rel="noopener noreferrer">GitHub
+                                    Profile</a>
+                            </li>
+                        </ul>
+
+                        <div class="resume-dl">
+                            <a href="#" class="btn btn-outline" download>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Download Resume
+                            </a>
+                        </div>
+                    </aside>
+
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                            <small class="error-msg"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email">
+                            <small class="error-msg"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                            <small class="error-msg"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p id="form-success" class="success-msg hidden">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-red">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sradhya Renish. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
